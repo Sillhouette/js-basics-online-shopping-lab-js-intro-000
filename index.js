@@ -54,7 +54,7 @@ function viewCart() {
 
     default:
       //Loop all items except last item and add them to multipleItems for sentence
-      for(let i = 0; i < lastItem; i++){
+      for(let i = 0; i <= lastItem; i++){
         multipleItems += `${cart[i].itemName} at $${cart[i].itemPrice}, `
       }
       //Add the vernacular for the final sentence to multpipleItems
